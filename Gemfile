@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-gem 'sqlite3'
-
 gem 'pg'
 
 gem 'sass-rails', '~> 4.0.0'
@@ -20,5 +18,5 @@ group :production do
 end
 
 group :development, :test do
-	gem 'sqlite3'
+	gem 'sqlite3', "~> 1.3.9", :require => "sqlite3"
 end
