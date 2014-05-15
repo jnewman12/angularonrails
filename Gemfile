@@ -14,3 +14,11 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 
 gem 'feedjira' #used because we are importing videos from external sites. Provides feed parsing library
+
+group :production do 
+	gem 'pg'
+end
+
+group :development, :test do
+	gem 'sqlite3'
+end
